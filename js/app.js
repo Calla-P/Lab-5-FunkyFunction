@@ -126,9 +126,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-  
-
+  let multTwoNumbs = multiply(multArr[0],multArr[1]);
+  let multOfThree = multiply(multTwoNumbs[0],multArr[2]);
+  let multMessage = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${multOfThree}.`;
+  let returnMultArray = [multOfThree[0],multMessage];
+  return returnMultArray;
 }
+
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
